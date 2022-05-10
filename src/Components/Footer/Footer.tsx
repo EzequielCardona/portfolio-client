@@ -11,7 +11,10 @@ const Footer = ():JSX.Element => {
       <div className='Logo-wrapper'>
         <Logo isWhite>LOGO</Logo>
       </div>
-      <p>Hecho con {<HeartIcon />} de Jaume. Copyright 2021 - Todos los derechos reservados.</p>
+      <div className="copyright">
+        <p>Hecho con {<HeartIcon />} de Jaume.</p>
+        <p>Copyright 2021 - Todos los derechos reservados.</p>
+      </div>
       <SocialIcons />
     </FooterWrapper>
   )
