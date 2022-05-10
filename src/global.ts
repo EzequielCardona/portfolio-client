@@ -2,16 +2,13 @@ import { createGlobalStyle } from 'styled-components/macro';
 
 const GlobalStyles = createGlobalStyle`
 
-  @font-face {
-    font-family: 'PoppinsBlack';
-    src: local('Poppins-Black'), url(./fonts/MyFont.woff) format('woff');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-      'embedded-opentype', and 'svg' */
-  }
   html {
+    --darkBlue: #310a90;
     --white: #ffffff;
     --global_boxShadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
-    --lg_screen: 1100px;
+    --break_screenLarge: 1100px;
+    --gradient0: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
+    --gradient1: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
   }
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure,
@@ -60,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
   *:after {
     box-sizing: border-box;
     line-height: 1.45;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PoppinsBlack', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
   }
@@ -77,12 +74,8 @@ const GlobalStyles = createGlobalStyle`
   html, body, #root {
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
   }
-
-  body {
-    overflow-x: hidden;
-  }
-
 `;
 
 export default GlobalStyles;
