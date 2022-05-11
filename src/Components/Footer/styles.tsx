@@ -11,6 +11,7 @@ export const FooterWrapper = styled.footer`
   @media only screen and (max-width: ${breakPoints.monitor}) { 
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 2rem
   }
   @media only screen and (max-width: ${breakPoints.desktop}) { padding: 1.5rem 4rem }
   @media only screen and (max-width: ${breakPoints.tablet}) { padding: 1.25rem 2rem }
