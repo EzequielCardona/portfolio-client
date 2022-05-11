@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterWrapper } from './Footer.styles';
+import { FooterWrapper } from '.';
 import { Logo } from '../Common/StylesMixing';
 import { ReactComponent as HeartIcon } from '../../Assets/icon-heart_outline.svg';
 import SocialIcons from '../Common/SocialIcons';

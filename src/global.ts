@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     --darkBlue: #310a90;
+    --purple: #6F34FE;
     --white: #ffffff;
     --global_boxShadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
     --break_screenLarge: 1100px;
@@ -74,7 +75,7 @@ const GlobalStyles = createGlobalStyle`
   html, body, #root {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
+    background: turquoise;
   }
 
   body {

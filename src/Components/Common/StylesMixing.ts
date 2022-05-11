@@ -37,9 +37,3 @@ export const Logo = styled.h1<{ isWhite?:boolean }>`
   line-height: 39px;
   letter-spacing: -0.5px;
 `;
-
-export const ContentWrapper = styled.div`
-  min-height: 100vh;
-  margin-bottom: -72.5px;
-  padding-top: 90.7px;
-`;

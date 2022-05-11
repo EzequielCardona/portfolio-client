@@ -3,7 +3,7 @@ import { breakPoints, mediaScaling } from "../StylesMixing";
 
 export const SocialIconsWrapper = styled.div`
   display: flex;
-  @media only screen and (max-width: ${breakPoints.tablet}) { margin-bottom:0.2rem }
+  @media only screen and (max-width: ${breakPoints.monitor}) { margin: 1rem 0 }
 
   svg {
     ${mediaScaling('width', 1, 1.5)};
@@ -11,9 +11,13 @@ export const SocialIconsWrapper = styled.div`
     padding: 0.5em;
     border-radius: 4px;
     border: 2px solid var(--darkBlue);
-    margin: 0.5rem;
     box-sizing: content-box;
     background-color: var(--white);
     cursor: pointer;
+    margin: 0.5em 0;
+
+    :not(:last-child) {
+      margin-right: 0.5em;
+    }
   }
 `;

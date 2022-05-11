@@ -2,6 +2,7 @@ import styled from "styled-components/macro";
 import { mediaScaling, breakPoints } from "../Common/StylesMixing";
 
 export const HeaderWrapper = styled.header`
+z-index: 100;
   width: 100%;
   display: flex;
   justify-content: space-between;
