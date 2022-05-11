@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import GlobalStyles from './global';
+import { ContentWrapper } from './Components/Common/StylesMixing';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
@@ -9,9 +10,9 @@ const App = ():JSX.Element => {
     <>
       <GlobalStyles />
       <Header />
-      <div style={{minHeight:'100vh', marginBottom:'-72.5px', paddingTop:'90.7px'}}>
+      <ContentWrapper>
         content
-      </div>
+      </ContentWrapper>
       <Footer />
     </>
   );

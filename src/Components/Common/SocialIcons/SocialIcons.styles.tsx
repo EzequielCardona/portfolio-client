@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { mediaScaling } from "../StylesMixing";
+import { breakPoints, mediaScaling } from "../StylesMixing";
 
 export const SocialIconsWrapper = styled.div`
   display: flex;
+  @media only screen and (max-width: ${breakPoints.tablet}) { margin-bottom:0.2rem }
 
   svg {
     ${mediaScaling('width', 1, 1.5)};
@@ -10,7 +11,7 @@ export const SocialIconsWrapper = styled.div`
     padding: 0.5em;
     border-radius: 4px;
     border: 2px solid var(--darkBlue);
-    margin: 0.2em;
+    margin: 0.5rem;
     box-sizing: content-box;
     background-color: var(--white);
     cursor: pointer;

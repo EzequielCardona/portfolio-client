@@ -8,6 +8,10 @@ export const FooterWrapper = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 0 8rem 2rem 8rem;
+  @media only screen and (max-width: ${breakPoints.monitor}) { 
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   @media only screen and (max-width: ${breakPoints.desktop}) { padding: 1.5rem 4rem }
   @media only screen and (max-width: ${breakPoints.tablet}) { padding: 1.25rem 2rem }
   @media only screen and (max-width: ${breakPoints.ipad}) { padding: 1rem }
@@ -15,6 +19,16 @@ export const FooterWrapper = styled.footer`
   .Logo-wrapper {
     width: 193.6px;
     @media only screen and (max-width: ${breakPoints.monitor}) { display: none }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: ${breakPoints.tablet}) { flex-direction: column; }
+    p { 
+      margin-right: 0.2rem;
+      text-align: center;
+    }
   }
 
   p {
