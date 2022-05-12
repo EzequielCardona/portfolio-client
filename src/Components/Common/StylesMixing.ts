@@ -16,6 +16,7 @@ export const mediaScaling = (property:string, variant:number, max:number):string
 };
 
 export const Button = styled.button`
+  width: 100%;
   padding: 0.8em 1.3em;
   color: var(--white);
   ${mediaScaling('font-size', 0.6, 0.875)}
@@ -36,10 +37,4 @@ export const Logo = styled.h1<{ isWhite?:boolean }>`
   ${mediaScaling('font-size', 1.2, 1.5)}
   line-height: 39px;
   letter-spacing: -0.5px;
-`;
-
-export const ContentWrapper = styled.div`
-  min-height: 100vh;
-  margin-bottom: -72.5px;
-  padding-top: 90.7px;
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components/macro";
 import { mediaScaling, breakPoints } from "../Common/StylesMixing";
 
 export const FooterWrapper = styled.footer`
-  height: 72.5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,6 +10,7 @@ export const FooterWrapper = styled.footer`
   @media only screen and (max-width: ${breakPoints.monitor}) { 
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 2rem
   }
   @media only screen and (max-width: ${breakPoints.desktop}) { padding: 1.5rem 4rem }
   @media only screen and (max-width: ${breakPoints.tablet}) { padding: 1.25rem 2rem }

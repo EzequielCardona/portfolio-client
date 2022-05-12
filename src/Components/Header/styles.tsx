@@ -2,6 +2,7 @@ import styled from "styled-components/macro";
 import { mediaScaling, breakPoints } from "../Common/StylesMixing";
 
 export const HeaderWrapper = styled.header`
+z-index: 100;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,6 +17,10 @@ export const HeaderWrapper = styled.header`
 
   .logo-wrapper { 
     ${mediaScaling('width', 8.45, 9.12)} 
+  }
+
+  .cv-button-wrapper {
+    width: 9.56;
   }
 
   nav {

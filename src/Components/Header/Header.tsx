@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeaderWrapper } from './Header.styles';
+import { HeaderWrapper } from '.';
 import { Button, Logo } from '../Common/StylesMixing';
 
 const Header = ():JSX.Element => {
@@ -23,7 +23,9 @@ const Header = ():JSX.Element => {
         <p className={(menuSelected === 'proyectos') ? "selected" : ""} onClick={onNavOptionClick}>PROYECTOS</p>
         <p className={(menuSelected === 'hablemos') ? "selected" : ""} onClick={onNavOptionClick}>HABLEMOS</p>
       </nav>
-      <Button>CURRÍCULUM</Button>
+      <div className="cv-button-wrapper">
+        <Button>CURRÍCULUM</Button>
+      </div>
     </HeaderWrapper>
   )
 }
