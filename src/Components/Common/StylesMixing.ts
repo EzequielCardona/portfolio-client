@@ -16,6 +16,7 @@ export const mediaScaling = (property:string, variant:number, max:number):string
 };
 
 export const Button = styled.button`
+  width: 100%;
   padding: 0.8em 1.3em;
   color: var(--white);
   ${mediaScaling('font-size', 0.6, 0.875)}
