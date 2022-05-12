@@ -1,7 +1,7 @@
 import React from 'react';
 import { FooterWrapper } from '.';
 import { Logo } from '../Common/StylesMixing';
-import { ReactComponent as HeartIcon } from '../../Assets/icon-heart_outline.svg';
+import { ReactComponent as HeartIcon } from '../../assets/icon-heart_outline.svg';
 import SocialIcons from '../Common/SocialIcons';
 
 const Footer = ():JSX.Element => {

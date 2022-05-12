@@ -1,8 +1,8 @@
 import React from "react";
 import { ContentWrapper } from ".";
 import SocialIcons from "../Common/SocialIcons";
-import jaumePhoto from '../../Assets/jaume-photo.png';
-import { ReactComponent as IconDown } from '../../Assets/icons-down.svg';
+import jaumePhoto from '../../assets/jaume-photo.png';
+import { ReactComponent as IconDown } from '../../assets/icons-down.svg';
 import { Button } from "../Common/StylesMixing";
 
 const Content = ():JSX.Element => {
