@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
     --gradient0: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
     --gradient1: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
 
-
     /*
       ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey; 
