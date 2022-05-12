@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { breakPoints, mediaScaling } from "../Common/StylesMixing";
+import { breakPoints, mediaScaling } from "../common/stylesMixing";
 
 export const ContentWrapper = styled.div`
 

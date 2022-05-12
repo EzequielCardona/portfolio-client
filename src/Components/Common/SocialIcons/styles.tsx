@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakPoints, mediaScaling } from "../StylesMixing";
+import { breakPoints, mediaScaling } from "../stylesMixing";
 
 export const SocialIconsWrapper = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HeaderWrapper } from '.';
-import { Button, Logo } from '../Common/StylesMixing';
+import { Button, Logo } from '../common/stylesMixing';
 
 const Header = ():JSX.Element => {
 
