@@ -10,7 +10,21 @@ const GlobalStyles = createGlobalStyle`
     --break_screenLarge: 1100px;
     --gradient0: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
     --gradient1: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
+
+
+    /*
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: red; 
+        border-radius: 10px;
+      } 
+    */
   }
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -75,12 +89,14 @@ const GlobalStyles = createGlobalStyle`
   html, body, #root {
     width: 100vw;
     height: 100vh;
-    background: turquoise;
+    
   }
 
   body {
     overflow-x: hidden;
+    background: turquoise;
   }
+
 `;
 
 export default GlobalStyles;

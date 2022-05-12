@@ -19,6 +19,10 @@ z-index: 100;
     ${mediaScaling('width', 8.45, 9.12)} 
   }
 
+  .cv-button-wrapper {
+    width: 9.56;
+  }
+
   nav {
     display: flex;
     @media only screen and (max-width: ${breakPoints.desktop}) { display: none }
