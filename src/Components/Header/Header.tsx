@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HeaderWrapper } from '.';
 import { Button, Logo } from '../common/stylesMixing';
 import NavList from './in/navList';
