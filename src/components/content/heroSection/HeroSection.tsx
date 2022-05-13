@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcons from '../../common/socialIcons';
+import { SocialIcons } from '../../common/socialIcons';
 import { Button } from '../../common/stylesMixing';
 import { HeroWrapper } from '.';
 import jaumePhoto from '../../../assets/jaume-photo.png';

@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterWrapper } from '.';
 import { Logo } from '../common/stylesMixing';
 import { ReactComponent as HeartIcon } from '../../assets/icon-heart_outline.svg';
-import SocialIcons from '../common/socialIcons';
+import { SocialIcons } from '../common/socialIcons';
 
 function Footer():React.ReactElement {
   return (

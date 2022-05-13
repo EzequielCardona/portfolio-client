@@ -1,19 +1,19 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 export const breakPoints = {
   ipad: '470px',
   tablet: '700px',
   desktop: '1023px',
-  monitor: '1270px'
-}
+  monitor: '1270px',
+};
 
-export const mediaScaling = (property:string, variant:number, max:number):string => {
+export function mediaScaling(property:string, variant:number, max:number):string {
   return (
     `
       ${property}: min(calc(${variant}rem + 1vw), ${max}rem);
     `
-  )
-};
+  );
+}
 
 export const Button = styled.button`
   width: 100%;
@@ -30,7 +30,9 @@ export const Button = styled.button`
 
 export const Logo = styled.h1<{ isWhite?:boolean }>`
   color: var(--darkBlue);
-  ${({isWhite}): string | false | undefined => isWhite &&`
+  ${({
+    isWhite,
+  }): string | false | undefined => isWhite && `
     color: var(--white);
   `}
   font-weight: 900;
