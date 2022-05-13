@@ -1,5 +1,5 @@
-import styled from "styled-components/macro";
-import { mediaScaling, breakPoints } from "../common/stylesMixing";
+import styled from 'styled-components/macro';
+import { mediaScaling, breakPoints } from '../common/stylesMixing';
 
 export const HeaderWrapper = styled.header`
 z-index: 100;
