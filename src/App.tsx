@@ -1,8 +1,8 @@
 import React from 'react';
 import GlobalStyles from './global';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Content from './Components/Content';
+import Header from './components/header';
+import Footer from './components/footer';
+import Content from './components/content';
 
 const App = ():JSX.Element => {
   return (
