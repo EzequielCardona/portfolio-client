@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as IconDown } from '../../../../Assets/icons-down.svg';
+import { ReactComponent as IconDown } from '../../../../assets/icons-down.svg';
 import { FullTextSectionWrapper } from "./styles";
 
 
