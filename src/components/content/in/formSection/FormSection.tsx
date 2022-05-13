@@ -9,14 +9,15 @@ const FormSection = ():JSX.Element => {
   });
 
   const handleChangeOnInput = (e:any) => {
-    // const { value, name } = e.target;
-    // setFormValues({
-    //   ...formValues,
-    //   [name]: value
-    // })
-    console.log(e.target.value)
+    
+    const { name, value } = e.target
+    
+    setFormValues({
+      ...formValues,
+      [name]: value
+    })
+
   }
-  console.log(formValues);
 
   const onSubmitForm = (e:any):void => {
     e.preventDefault();
