@@ -1,17 +1,17 @@
-import React from "react";
-import { ContentWrapper } from ".";
-import FormSection from "./in/formSection";
-import FullTextSection from "./in/fullTextSection";
-import HeroSection from "./in/heroSection";
+import React from 'react';
+import { ContentWrapper } from '.';
+import { FormSection } from './formSection';
+import { FullTextSection } from './fullTextSection';
+import { HeroSection } from './heroSection';
 
-const Content = ():JSX.Element => {
+function Content():React.ReactElement {
   return (
     <ContentWrapper>
       <HeroSection />
       <FullTextSection />
       <FormSection />
     </ContentWrapper>
-  )
+  );
 }
 
 export default Content;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { mediaScaling, breakPoints } from "../../../common/stylesMixing";
+import styled from 'styled-components';
+import { mediaScaling, breakPoints } from '../../common/stylesMixing';
 
 export const FullTextSectionWrapper = styled.div`
   display: flex;

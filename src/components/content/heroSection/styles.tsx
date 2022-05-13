@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { breakPoints, mediaScaling } from "../../../common/stylesMixing";
+import styled from 'styled-components';
+import { breakPoints, mediaScaling } from '../../common/stylesMixing';
 
 export const HeroWrapper = styled.div`
   display: flex;
