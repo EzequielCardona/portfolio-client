@@ -4,6 +4,7 @@ import { FullTextSection } from './fullTextSection';
 import { HeroSection } from './heroSection';
 import { ProjectsSection } from './projectsSection';
 import { ReviewsSection } from './reviewsSection';
+import { FormSection } from './formSection';
 import firstProjectImage from '../../assets/first-project.png';
 import secondProjectImage from '../../assets/second-project.png';
 import thirdProjectImage from '../../assets/third-project.png';
@@ -54,6 +55,7 @@ function Content():React.ReactElement {
         aparecimos en todas las plataformas en las que trabajamos'."
         reviewerInfo="MARCO CORTEZ / NETNET"
       />
+      <FormSection />
     </ContentWrapper>
   );
 }
