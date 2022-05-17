@@ -1,2 +1,2 @@
-export { default } from './SocialIcons';
+export { default as SocialIcons } from './SocialIcons';
 export * from './styles';

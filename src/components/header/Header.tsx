@@ -1,21 +1,20 @@
 import React from 'react';
 import { HeaderWrapper } from '.';
 import { Button, Logo } from '../common/stylesMixing';
-import NavList from './in/navList';
+import { NavList } from './navList';
 
-const Header = ():JSX.Element => {
-
+function Header():React.ReactElement {
   return (
     <HeaderWrapper>
       <div className="logo-wrapper">
         <Logo>LOGO</Logo>
       </div>
       <NavList />
-      <div className="cv-button-wrapper">
+      <div className="button-wrapper">
         <Button>CURRÍCULUM</Button>
       </div>
     </HeaderWrapper>
-  )
+  );
 }
 
 export default Header;

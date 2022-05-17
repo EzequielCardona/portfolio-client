@@ -1,2 +1,2 @@
-export { default } from './Content';
+export { default as Content } from './Content';
 export * from './styles';
