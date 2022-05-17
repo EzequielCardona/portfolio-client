@@ -24,12 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .tsx,.ts src",
-    "pre-commit": "npm run lint",
-    "pre-push": "npm test",
-    "post-merge": "npm install", 
-    "post-rewrite": "npm install",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
