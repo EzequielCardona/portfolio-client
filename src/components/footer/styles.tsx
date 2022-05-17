@@ -6,12 +6,15 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8rem 2rem 8rem;
+  padding: 0 12rem 2rem 12rem;
+  
   @media only screen and (max-width: ${breakPoints.monitor}) { 
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 2rem
+    margin-top: 2rem;
+    padding: 0 8rem 2rem 8rem;
   }
+  
   @media only screen and (max-width: ${breakPoints.desktop}) { padding: 1.5rem 4rem }
   @media only screen and (max-width: ${breakPoints.tablet}) { padding: 1.25rem 2rem }
   @media only screen and (max-width: ${breakPoints.ipad}) { padding: 1rem }

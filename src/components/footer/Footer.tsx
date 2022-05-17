@@ -4,7 +4,13 @@ import { Logo } from '../common/stylesMixing';
 import { ReactComponent as HeartIcon } from '../../assets/icon-heart_outline.svg';
 import { SocialIcons } from '../common/socialIcons';
 
-function Footer():React.ReactElement {
+interface footerProps {
+  copyright: string,
+}
+
+function Footer({
+  copyright,
+}:footerProps):React.ReactElement {
   return (
     <FooterWrapper>
       <div className="Logo-wrapper">
@@ -16,7 +22,7 @@ function Footer():React.ReactElement {
           <HeartIcon />
           de Jaume.
         </p>
-        <p>Copyright 2021 - Todos los derechos reservados.</p>
+        <p>{copyright}</p>
       </div>
       <SocialIcons />
     </FooterWrapper>

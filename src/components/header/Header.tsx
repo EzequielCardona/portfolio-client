@@ -10,7 +10,7 @@ function Header():React.ReactElement {
         <Logo>LOGO</Logo>
       </div>
       <NavList />
-      <div className="cv-button-wrapper">
+      <div className="button-wrapper">
         <Button>CURRÍCULUM</Button>
       </div>
     </HeaderWrapper>

@@ -10,7 +10,7 @@ function App():React.ReactElement {
       <GlobalStyles />
       <Header />
       <Content />
-      <Footer />
+      <Footer copyright="Copyright 2021 - Todos los derechos reservados" />
     </>
   );
 }
