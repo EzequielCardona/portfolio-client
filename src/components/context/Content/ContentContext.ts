@@ -3,7 +3,11 @@ import { createContext } from 'react';
 interface valueProps {
   sentNotification: boolean,
   sentMessage: string,
-  sendData: (formData: any) => Promise<void>,
+  sendData: (formData: {
+    nombreCompleto: string,
+    email: string,
+    mensaje: string,
+  }) => Promise<void>,
 }
 
 const ContentContext = createContext<valueProps | null>(null);

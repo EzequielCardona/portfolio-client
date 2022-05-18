@@ -3,7 +3,11 @@ import axiosClient from '../../../config/axios';
 import ContentContext from './ContentContext';
 import ContentReducer from './ContentReducer';
 
-function ContentState(props: any) {
+interface contentStateProps {
+  children: React.ReactElement[],
+}
+
+function ContentState(props: contentStateProps) {
   const {
     children,
   } = props;
@@ -12,11 +16,16 @@ function ContentState(props: any) {
     sentMessage: '',
   };
   const [state, dispatch] = useReducer(ContentReducer, initialState);
-  const sendData = async (formData: any) => {
+  const sendData = async (formData: {
+    nombreCompleto: string,
+    email: string,
+    mensaje: string,
+  }) => {
     const response = await axiosClient.post('/leads', formData);
     console.log(response);
     dispatch({
       type: 'SENT_INFO',
+      payload: formData.mensaje,
     });
   };
   const contextProviderValue = useMemo(() => ({

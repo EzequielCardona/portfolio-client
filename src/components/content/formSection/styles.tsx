@@ -1,9 +1,15 @@
 import styled from 'styled-components';
-import { mediaScaling } from '../../common/stylesMixing';
+import { breakPoints, mediaScaling } from '../../common/stylesMixing';
 
 export const FormWrapper = styled.div`
   width: 34rem;
   margin: 4rem auto;
+  @media only screen and (max-width: ${breakPoints.monitor}) {
+    width: 80%;
+  }
+  @media only screen and (max-width: ${breakPoints.tablet}) {
+    width: 100%;
+  }
 
   .button-wrapper {
     margin-top: 1rem;
