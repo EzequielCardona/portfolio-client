@@ -48,11 +48,16 @@ export const Logo = styled.h1<{ isWhite?:boolean }>`
   letter-spacing: -0.5px;
 `;
 
-export const HighlightedTitle = styled.div`
+export const HighlightedTitle = styled.div<{ isInContactForm?: boolean }>`
 
   background-color: var(--darkBlue);
   position: relative;
   width: fit-content;
+  ${({
+    isInContactForm,
+  }): string | false | undefined => isInContactForm && `
+    width: 100%
+  `};
 
   ::before {
     content: '';
@@ -61,10 +66,16 @@ export const HighlightedTitle = styled.div`
     height: 100%;
     transform: translate(-0.3rem, 0.3rem);
     background-color: white;
+    left: 0;
     z-index: -1;
   }
 
   h2 {
+    ${({
+    isInContactForm,
+  }): string | false | undefined => isInContactForm && `
+      text-align: center;
+    `};
     padding: 0.2rem 1rem;;
     color: var(--white);
     font-weight: 700;
