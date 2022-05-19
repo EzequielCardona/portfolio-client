@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     --darkBlue: #310a90;
     --purple: #6F34FE;
     --white: #ffffff;
+    --red: #DA1414;
     --global_boxShadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
     --break_screenLarge: 1100px;
     --gradient0: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
