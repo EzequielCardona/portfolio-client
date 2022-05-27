@@ -21,7 +21,7 @@ function ContentState(props: contentStateProps) {
     email: string,
     mensaje: string,
   }) => {
-    const response = await axiosClient.post('/leads', formData);
+    const response = await axiosClient.post('/leads/create', formData);
     console.log(response);
     dispatch({
       type: 'SENT_INFO',
